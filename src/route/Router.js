@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
       },
 
       {
-        path: '/tracagem',
+        path: 'tracagem',
         element: <Tracagem />
       },
 
