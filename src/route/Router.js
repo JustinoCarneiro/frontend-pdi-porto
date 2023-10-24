@@ -4,13 +4,15 @@ import {
   Home, 
   Overview, 
   Tracagem, 
-  Terminal 
+  Terminal,
+  Page404 
 } from "../pages";
 
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <RootLayout />,
+    errorElement: <Page404 />, 
     children: [
       {
         path: '/',
@@ -29,7 +31,8 @@ export const router = createBrowserRouter([
       {
         path: 'tracagem/:id',
         element: <Terminal />
-      }
+      }, 
+      
     ]
   },
 ])
