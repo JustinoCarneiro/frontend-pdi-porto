@@ -1,33 +1,34 @@
-import { createBrowserRouter, Outlet } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
+import { 
+  RootLayout, 
+  Home, 
+  Overview, 
+  Tracagem, 
+  Terminal 
+} from "../pages";
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: (
-      <div>
-        <p>Layout</p>
-        <Outlet />
-      </div>
-    ),
-
+    element: <RootLayout />,
     children: [
       {
         path: '/',
-        element: <div>Home page</div>
+        element: <Home />
       },
       {
         path: 'overview',
-        element: (<div>Overview Page</div>)
+        element: <Overview />
       },
 
       {
         path: '/tracagem',
-        element: (<>Tracagem Page</>)
+        element: <Tracagem />
       },
 
       {
         path: 'tracagem/:id',
-        element: (<>terminal</>)
+        element: <Terminal />
       }
     ]
   },
