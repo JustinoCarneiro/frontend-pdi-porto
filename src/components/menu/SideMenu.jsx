@@ -5,11 +5,11 @@ import style from "./style.module.css";
 
 const SideMenu = () => {
   return (
-    <li className={style.container__menu}>
+    <ul className={style.container__menu}>
       {menu.map((item) => (
-        <MenuItem {...item} />
+        <MenuItem {...item} key={item.id}/>
       ))}
-    </li>
+    </ul>
   );
 };
 
