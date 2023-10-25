@@ -3,8 +3,8 @@ import style from './style.module.css'
 
 const Topbar = () => {
   return (
-    <nav>
-      
+    <nav className={style.nav}>
+      top bar
     </nav>
   )
 }

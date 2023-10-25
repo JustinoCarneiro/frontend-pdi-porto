@@ -1,0 +1,36 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  min-width: 100vw;
+}
+
+.container__aside {
+  width: 64px;
+  height: 100vh;
+  border-right: 1px solid rgb(211, 208, 208);
+}
+
+.container__box {
+  flex: 1;
+}
+
+.box--header{
+  height: 64px;
+  border-bottom: 1px solid rgb(211, 208, 208);
+}
+
+.box--main {
+  flex: 1;
+  padding: 16px;
+}
+
+@media screen and (min-width: 480px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 980px) {
+  .container__aside {
+    width: 250px;
+  }
+}
