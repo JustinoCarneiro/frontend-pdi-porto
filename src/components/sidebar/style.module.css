@@ -10,7 +10,7 @@
   padding: 0px 16px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--font-secondary);
+  border-bottom: 1px solid var(--ui-color);
 }
 
 .nav-container{
