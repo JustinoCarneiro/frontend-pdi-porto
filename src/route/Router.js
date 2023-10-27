@@ -1,18 +1,18 @@
 import { createBrowserRouter } from "react-router-dom";
-import { 
-  RootLayout, 
-  Home, 
-  Overview, 
-  Tracagem, 
+import {
+  RootLayout,
+  Home,
+  Overview,
+  Tracagem,
   Terminal,
-  Page404 
+  Page404,
+  TerminalOpertion
 } from "../pages";
 
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <RootLayout />,
-    errorElement: <Page404 />, 
     children: [
       {
         path: '/',
@@ -24,14 +24,26 @@ export const router = createBrowserRouter([
       },
 
       {
-        path: 'tracagem',
-        element: <Tracagem />
+        path: 'terminal',
+        element: <Tracagem />,
+        children: [
+          {
+            path: '/terminal',
+            element: <Terminal />
+          },
+          {
+            path: '/terminal/:code',
+            element: <TerminalOpertion />,
+          },
+
+        ]
       },
 
       {
-        path: 'tracagem/:id',
-        element: <Terminal />
-      }, 
+        path: '*',
+        element: <Page404 />,
+      }
+
     ]
   },
 ])

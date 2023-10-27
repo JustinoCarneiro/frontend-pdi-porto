@@ -1,0 +1,53 @@
+.container{
+  background-color: var(--bg-color-2nd);
+  padding: 16px;
+  border-radius: 8px;
+  /* border: 1px solid var(--ui-color); */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.container__text{
+  display: flex;
+  flex-direction: row;
+  gap: 16px
+}
+
+.text__title{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--font-hack);
+}
+
+.text__subtitle{
+  font-size: 17px;
+  color: var(--ui-color);
+}
+
+.text__value{
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--font-variant);
+}
+
+/* status */
+.status{
+  padding: 1px 4px;
+  border-radius: 4px;
+  color: var(--font-primary)
+}
+
+.Suspenso{
+  background-color: brown;
+ 
+}
+
+.Operando{
+  background-color: rgb(10, 165, 46);
+}
+
+.Indefinido{
+  background-color: #ee6204b2;
+}
+

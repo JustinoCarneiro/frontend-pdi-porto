@@ -13,6 +13,7 @@
   --font-primary: #FFFFFF;
   --font-secondary: rgba(255, 255, 255, 0.8);
   --font-variant: rgba(255, 255, 255, 0.5);
+  --font-hack: #16C60C;
 }
 
 
@@ -28,6 +29,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.page-container{
+  flex: 1;
 }
 
 

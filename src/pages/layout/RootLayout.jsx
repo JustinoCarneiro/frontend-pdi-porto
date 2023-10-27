@@ -1,12 +1,12 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useResolvedPath, useRoutes } from 'react-router-dom'
 import { Topbar, Sidebar } from '../../components'
+import { formatPathname } from "../../utils";
 import style from './style.module.css'
-import {useMatches} from 'react-router-dom'
 
 const RootLayout = () => {
- const matchc = useMatches()
- console.log(matchc)
+ const {pathname} =  useResolvedPath()
+ const formatedpath = formatPathname(pathname)
   return (
     <div className={style['container']}>
       <aside className={style.container__aside}>
@@ -20,7 +20,7 @@ const RootLayout = () => {
         </header>
 
         <main className={style['box--main']}>
-          <p>{}</p>
+          <p className={style.pathname}>{formatedpath}</p>
           <Outlet />
         </main>
 

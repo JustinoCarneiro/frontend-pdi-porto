@@ -1,10 +1,13 @@
-import React from 'react'
-import style from './style.module.css'
+import React from "react";
+import { Outlet } from "react-router-dom";
 
 const Tracagem = () => {
-  return (
-    <div>Tracagem</div>
-  )
-}
 
-export default Tracagem
+  return (
+    <div className={'page-container'}>
+      <Outlet />
+    </div>
+  );
+};
+
+export default Tracagem;

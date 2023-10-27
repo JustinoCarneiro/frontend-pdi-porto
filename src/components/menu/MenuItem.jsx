@@ -12,7 +12,7 @@ const MenuItem = ({ id, name, path, Icon }) => {
         }
       >
         <div className={style.menu__item}>
-          <Icon size={24} className={style["item--icon"]} />
+          <Icon className={style["item--icon"]} />
           <p className={style["item--name"]}>{name}</p>
         </div>
       </NavLink>

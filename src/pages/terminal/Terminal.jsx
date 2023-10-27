@@ -1,11 +1,18 @@
 import React from "react";
 import style from "./style.module.css";
-import { useParams } from "react-router-dom";
+import { CardTerminal } from "../../components";
+import terminals from "../../data/terminais.json";
 
 const Terminal = () => {
-  const { id } = useParams();
+  // const { id } = useParams();
   return (
-    <div>Terminal: {id}</div>
+    <div>
+      <ul className={style.container__card}>
+        {terminals.map((item) => (
+          <CardTerminal {...item} key={item.id} />
+        ))}
+      </ul>
+    </div>
   );
 };
 

@@ -16,8 +16,8 @@ export const menu = [
   },
   {
     id: 3,
-    name: "Tracagem",
-    path: "/tracagem",
+    name: "Terminal",
+    path: "/terminal",
     Icon: TbSailboat
   }
 ]

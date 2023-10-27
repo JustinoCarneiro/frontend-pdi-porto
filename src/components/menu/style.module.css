@@ -20,6 +20,7 @@
 
 .item--icon{
   color: var(--font-primary);
+  font-size: 24px;
 }
 
 .activeMenu > .menu__item{
